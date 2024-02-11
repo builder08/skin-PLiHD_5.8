@@ -2148,6 +2148,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 	<screen name="About" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0"/>
+	        <ePixmap pixmap="/usr/share/enigma2/sf8008.png" alphatest="blend" position="143,542" size="500,148" />
+	        <ePixmap pixmap="/usr/share/enigma2/ustym4kpro.png" alphatest="blend" position="143,542" size="500,148" />
 	</screen>
 	<!-- Memory Info -->
 	<screen name="MemoryInfo" position="fill" flags="wfNoBorder">

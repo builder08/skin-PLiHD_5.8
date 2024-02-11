@@ -63,11 +63,13 @@
 	<screen name="PigTemplate">
 		<panel name="SelectionTemplate"/>
 		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullNightHD/logos/logo.png" position="68,952" size="283,51" scale="1" zPosition="1" alphatest="blend" />
 	</screen>
 
 	<screen name="PigLessTemplate">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullNightHD/logos/logo.png" position="69,952" size="283,51" scale="1" zPosition="1" alphatest="blend" />
 	</screen>
 
 	<screen name="MenuTemplate">
@@ -399,6 +401,18 @@
 			<convert type="RotorPosition"/>
 		</widget>
 		<!--<ePixmap pixmap="icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
+		
+		
+	        <!-- TempFanCam BF -->
+                <widget source="session.CurrentService" render="Label" position="1705,853" size="370,33" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28">
+                        <convert type="TempFanCam">TempInfo</convert>
+                </widget>
+                <!-- <widget source="session.CurrentService" render="Label" position="1705,50" size="370,33" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28">
+                <convert type="TempFanCam">FanInfo</convert>
+                </widget> -->
+                <widget source="session.CurrentService" render="Label" borderWidth="2" position="1200,845" size="195,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="right">
+                        <convert type="TempFanCam">CamName</convert>
+                 </widget>		
 	</screen>
 `</skin>
 
